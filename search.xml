@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>面试复习到的知识点</title>
+      <link href="/2022/09/05/new/"/>
+      <url>/2022/09/05/new/</url>
+      
+        <content type="html"><![CDATA[<h2 id="css常见布局"><a href="#css常见布局" class="headerlink" title="css常见布局"></a>css常见布局</h2><h2 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h2><h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><h2 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h2><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><h2 id="class类（继承一系列问题）"><a href="#class类（继承一系列问题）" class="headerlink" title="class类（继承一系列问题）"></a>class类（继承一系列问题）</h2><h2 id="异步编程与同步编程"><a href="#异步编程与同步编程" class="headerlink" title="异步编程与同步编程"></a>异步编程与同步编程</h2><h2 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h2><h2 id="async-await"><a href="#async-await" class="headerlink" title="async / await"></a>async / await</h2><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> es6 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> es6 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端工程化</title>
       <link href="/2022/07/22/react-2/"/>
       <url>/2022/07/22/react-2/</url>
