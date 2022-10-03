@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vuex学习笔记, 学习网站">
+    <meta name="keywords" content="git使用教程, 学习网站">
     <meta name="description" content="本网站是个人兴趣爱好，总结分享经验，记录生活点滴的平台，希望在以后的学习旅途中，走出自己的风景">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>vuex学习笔记 | 学习网站</title>
+    <title>git使用教程 | 学习网站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -372,12 +372,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">vuex学习笔记</h1>
+                    <h1 class="description center-align post-title">git使用教程</h1>
                 </div>
             </div>
         </div>
@@ -493,8 +493,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/vue2/">
-                                <span class="chip bg-color">vue2</span>
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
                             </a>
                         
                     </div>
@@ -505,8 +505,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/vue/" class="post-category">
-                                vue
+                            <a href="/categories/git/" class="post-category">
+                                git
                             </a>
                         
                     </div>
@@ -518,7 +518,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-14
+                    2022-10-01
                 </div>
                 
 
@@ -527,7 +527,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.5k
                 </div>
                 
 
@@ -547,237 +547,167 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="介绍vuex"><a href="#介绍vuex" class="headerlink" title="介绍vuex"></a>介绍vuex</h4><ol>
-<li><code>vuex</code>是什么<br>vuex : 专门在vue中实现<code>集中式</code>状态（数据）管理的一个<code>vue</code>插件，对<code>vue</code>应用中的多个组件的共享状态进行集中式的管理（读/写），也是一种组件间通信的方式，且适用于任意组件间通信。</li>
-<li>什么时候用<code>vuex</code><ul>
-<li>多个组件依赖同一状态。</li>
-<li>来自不同组件的行为需要变更为同一状态。</li>
-</ul>
-</li>
+                <h2 id="git概述"><a href="#git概述" class="headerlink" title="git概述"></a>git概述</h2><p>git：分布式版本控制系统<br><img src="https://img-blog.csdnimg.cn/img_convert/ff9c077e0447c6aef3179d930e2653ac.png"></p>
+<h2 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h2><p>设置用户名  <code>git config --global user.name 用户名</code><br>设置用户邮箱  <code>git config --global user.email 邮箱</code><br>查看用户信息  <code>cat ~/.gitconfig</code><br>初始化本地仓库  <code>git init</code><br>查看本地库状态  <code>git status</code><br>添加到暂存区  <code>git add 文件名</code><br>提交到本地库  <code>git commit -m "日志信息" 文件名</code>  </p>
+<p><strong>历史版本</strong><br>查看历史记录  <code>git reflog</code><br>查看版本详细信息  <code>git log</code><br>版本穿梭  <code>git reset --hard 版本号</code>  </p>
+<p><strong>分支操作</strong><br>创建分支  <code>git branch 分支名</code><br>查看分支  <code>git branch -v</code><br>切换分支  <code>git checkout 分支名</code><br>把指定的分支合并到当前分支上  <code>git merge 分支名</code></p>
+<p><strong>远程仓库操作</strong><br>查看当前所有远程地址别名  <code>git remote -v</code><br>给远程仓库起别名  <code>git remote add 别名 远程地址</code><br>推送本地分支上的内容到远程仓库  <code>git push 别名 分支</code><br>将远程仓库的内容克隆到本地  <code> git clone 远程仓库</code><br>将远程仓库对于分支最新内容拉下来后与当前本地分支直接合并  <code>git pull 远程库地址别名 远程分支名</code></p>
+<h3 id="一-设置用户名"><a href="#一-设置用户名" class="headerlink" title="一. 设置用户名"></a>一. 设置用户名</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">$ cat ~/.gitconfig 
+[user]
+        email = 2714486360@qq.com
+        name = fanxx123<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="二-初始化本地库"><a href="#二-初始化本地库" class="headerlink" title="二. 初始化本地库"></a>二. 初始化本地库</h3><pre class="line-numbers language-none"><code class="language-none">$ git init 
+Initialized empty Git repository in D:/Git-Space/SH0720/.git/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>结果：生成git文件夹</p>
+<h3 id="三-查看本地库状态"><a href="#三-查看本地库状态" class="headerlink" title="三. 查看本地库状态"></a>三. 查看本地库状态</h3><h4 id="3-1-首次查看（-工作区没有任何文件-）"><a href="#3-1-首次查看（-工作区没有任何文件-）" class="headerlink" title="3.1 首次查看（ 工作区没有任何文件 ）"></a>3.1 首次查看（ 工作区没有任何文件 ）</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git status 
+On branch master 
+No commits yet 
+nothing to commit (create/copy files and use "git add" to track)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="3-2-新增文件-（hello-txt）"><a href="#3-2-新增文件-（hello-txt）" class="headerlink" title="3.2 新增文件 （hello.txt）"></a>3.2 新增文件 （hello.txt）</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ vim hello.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h4 id="3-3-再次查看（-检测到未追踪的文件-）"><a href="#3-3-再次查看（-检测到未追踪的文件-）" class="headerlink" title="3.3 再次查看（ 检测到未追踪的文件 ）"></a>3.3 再次查看（ 检测到未追踪的文件 ）</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git status 
+On branch master 
+No commits yet 
+Untracked files: 
+  (use "git add &lt;file&gt;..." to include in what will be committed) 
+        hello.txt 
+nothing added to commit but untracked files present (use "git add" 
+to track) 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="四-添加到暂存区"><a href="#四-添加到暂存区" class="headerlink" title="四. 添加到暂存区"></a>四. 添加到暂存区</h3><h4 id="4-1-将工作区的文件添加到暂存区"><a href="#4-1-将工作区的文件添加到暂存区" class="headerlink" title="4.1 将工作区的文件添加到暂存区"></a>4.1 将工作区的文件添加到暂存区</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git add hello.txt 
+warning: LF will be replaced by CRLF in hello.txt. 
+The file will have its original line endings in your working 
+directory. 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="4-2-查看状态（-检测到暂存区-有新文件）"><a href="#4-2-查看状态（-检测到暂存区-有新文件）" class="headerlink" title="4.2 查看状态（ 检测到暂存区 有新文件）"></a>4.2 查看状态（ 检测到暂存区 有新文件）</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git status 
+On branch master 
+No commits yet 
+Changes to be committed: 
+  (use "git rm --cached &lt;file&gt;..." to unstage) 
+        new file:   hello.txt 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="五-提交本地库"><a href="#五-提交本地库" class="headerlink" title="五. 提交本地库"></a>五. 提交本地库</h3><h4 id="5-1-将暂存区的-文件-提交到本地库"><a href="#5-1-将暂存区的-文件-提交到本地库" class="headerlink" title="5.1 将暂存区的 文件 提交到本地库"></a>5.1 将暂存区的 文件 提交到本地库</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git commit -m "my first commit" hello.txt 
+warning: LF will be replaced by CRLF in hello.txt. 
+The file will have its original line endings in your working 
+directory. 
+[master (root-commit) 86366fa] my first commit 
+ 1 file changed, 16 insertions(+) 
+ create mode 100644 hello.txt 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="5-2-查看状态（没有文件需要提交）"><a href="#5-2-查看状态（没有文件需要提交）" class="headerlink" title="5.2 查看状态（没有文件需要提交）"></a>5.2 查看状态（没有文件需要提交）</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git status 
+On branch master 
+nothing to commit, working tree clean 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="六-历史版本"><a href="#六-历史版本" class="headerlink" title="六. 历史版本"></a>六. 历史版本</h3><h4 id="6-1-查看历史版本"><a href="#6-1-查看历史版本" class="headerlink" title="6.1 查看历史版本"></a>6.1 查看历史版本</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git reflog 
+087a1a7 (HEAD -&gt; master) HEAD@{0}: commit: my third commit 
+ca8ded6 HEAD@{1}: commit: my second commit 
+86366fa HEAD@{2}: commit (initial): my first commit
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="6-2-历史版本切换"><a href="#6-2-历史版本切换" class="headerlink" title="6.2 历史版本切换"></a>6.2 历史版本切换</h4><pre class="line-numbers language-none"><code class="language-none">--首先查看当前的历史记录，可以看到当前是在 087a1a7 这个版本 
+Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git reflog 
+087a1a7 (HEAD -&gt; master) HEAD@{0}: commit: my third commit 
+ca8ded6 HEAD@{1}: commit: my second commit 
+86366fa HEAD@{2}: commit (initial): my first commit 
+--切换到 86366fa 版本，也就是我们第一次提交的版本 
+Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git reset --hard 86366fa 
+HEAD is now at 86366fa my first commit 
+--切换完毕之后再查看历史记录，当前成功切换到了 86366fa 版本 
+Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git reflog 
+86366fa (HEAD -&gt; master) HEAD@{0}: reset: moving to 86366fa 
+087a1a7 HEAD@{1}: commit: my third commit 
+ca8ded6 HEAD@{2}: commit: my second commit 
+86366fa (HEAD -&gt; master) HEAD@{3}: commit (initial): my first commit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="七-分支的操作"><a href="#七-分支的操作" class="headerlink" title="七. 分支的操作"></a>七. 分支的操作</h3><h4 id="7-1-查看分支"><a href="#7-1-查看分支" class="headerlink" title="7.1 查看分支"></a>7.1 查看分支</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git branch -v 
+* master 087a1a7 my third commit  （*代表当前所在的分区）
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="7-2-创建分支"><a href="#7-2-创建分支" class="headerlink" title="7.2 创建分支"></a>7.2 创建分支</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$  git branch hot-fix 
+Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git branch -v 
+  hot-fix 087a1a7 my third commit  （刚创建的新的分支，并将主分支 master
+的内容复制了一份） 
+* master  087a1a7 my third commit
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="7-3-切换分支"><a href="#7-3-切换分支" class="headerlink" title="7.3 切换分支"></a>7.3 切换分支</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git checkout hot-fix 
+Switched to branch 'hot-fix' 
+--发现当先分支已由 master 改为 hot-fix 
+Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (hot-fix)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="7-4-合并分支"><a href="#7-4-合并分支" class="headerlink" title="7.4 合并分支"></a>7.4 合并分支</h4><p>在 master 分支上合并 hot-fix 分支</p>
+<pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$ git merge hot-fix 
+Auto-merging hello.txt 
+CONFLICT (content): Merge conflict in hello.txt 
+Automatic merge failed; fix conflicts and then commit the result. 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="7-5-产生冲突"><a href="#7-5-产生冲突" class="headerlink" title="7.5 产生冲突"></a>7.5 产生冲突</h4><p>产生冲突的原因：合并分支时，两个分支在 同一个文件的同一个位置有两套完全不同的修改。Git 无法替<br>我们决定使用哪一个。必须 人为决定新代码内容。<br>产生冲突的表现：后面状态为 MERGING</p>
+<pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master|MERGING) <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="7-4-解决冲突"><a href="#7-4-解决冲突" class="headerlink" title="7.4 解决冲突"></a>7.4 解决冲突</h4><ol>
+<li>编辑有冲突的文件，删除特殊符号，决定要使用的内容<br>特殊符号：&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 当前分支的代码 ======= 合并过来的代码 &gt;&gt;&gt;&gt;&gt;&gt;&gt; hot-fix</li>
+<li>添加到暂存区</li>
 </ol>
-<h4 id="vuex工作原理图"><a href="#vuex工作原理图" class="headerlink" title="vuex工作原理图"></a>vuex工作原理图</h4><p><img src="https://s2.loli.net/2022/03/04/ckaAqND7uQXHw6S.png"></p>
-<h4 id="搭建vuex环境"><a href="#搭建vuex环境" class="headerlink" title="搭建vuex环境"></a>搭建vuex环境</h4><ol>
-<li><p>安装插件 <code>npm i vuex@3</code></p>
-<blockquote>
-<p>2022年2月7日，Vue3成为默认框架，<code>npm i vue</code>命令将下载vue3版本<br>vuex 更新至 vuex4 版本 ， <code>npm i vuex</code>将下载vuex4版本<br>vue2 使用 vuex3 ，vue3 使用 vuex4</p>
-</blockquote>
-</li>
-<li><p>引入 <code>import Vuex from 'vuex'</code></p>
-</li>
-<li><p>使用 <code>Vue.use(vuex)</code>  ===&gt; 所有的<code>vc</code>,<code>vm</code>上都有了一个<code>$store</code></p>
-</li>
-<li><p>在 src 文件夹下新建文件夹 store，新建文件 index.js，在该文件中创建store。</p>
-</li>
-</ol>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//该文件用于创建Vuex中最为核心的store</span>
-<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
-<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
-Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
-
-<span class="token comment">//actions 用于响应组件中的动作</span>
-<span class="token keyword">const</span> actions <span class="token operator">=</span> <span class="token punctuation">{</span>
-   <span class="token function">jiaOdd</span><span class="token punctuation">(</span><span class="token parameter">context<span class="token punctuation">,</span>value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-      <span class="token comment">//context 相当于一个简化的store</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'actions中的jiaOdd被调用了'</span><span class="token punctuation">)</span>
-		<span class="token keyword">if</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>sum <span class="token operator">%</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-			context<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'JIA'</span><span class="token punctuation">,</span>value<span class="token punctuation">)</span>
-		<span class="token punctuation">}</span>
-	<span class="token punctuation">}</span><span class="token punctuation">,</span>
-   <span class="token function">jiaWait</span><span class="token punctuation">(</span><span class="token parameter">context<span class="token punctuation">,</span>value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'actions中的jiaWait被调用了'</span><span class="token punctuation">)</span>
-		<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
-			context<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'JIA'</span><span class="token punctuation">,</span>value<span class="token punctuation">)</span>
-		<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">500</span><span class="token punctuation">)</span>
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token comment">//mutations 用于操作数据（state）</span>
-<span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">{</span>
-   <span class="token constant">JIA</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'mutations中的JIA被调用了'</span><span class="token punctuation">)</span>
-		state<span class="token punctuation">.</span>sum <span class="token operator">+=</span> value
-	<span class="token punctuation">}</span><span class="token punctuation">,</span>
-   <span class="token constant">JIAN</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'mutations中的JIAN被调用了'</span><span class="token punctuation">)</span>
-		state<span class="token punctuation">.</span>sum <span class="token operator">-=</span> value
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token comment">//state 用于存储数据</span>
-<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
-   <span class="token literal-property property">sum</span><span class="token operator">:</span><span class="token number">0</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment">//创建并暴露store</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-	actions<span class="token punctuation">,</span>
-	mutations<span class="token punctuation">,</span>
-	state
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//main.js文件</span>
-<span class="token comment">//引入Vue</span>
-<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
-<span class="token comment">//引入App</span>
-<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span>
-<span class="token comment">//引入store</span>
-<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'./store'</span>
-<span class="token comment">//关闭Vue的生产提示</span>
-Vue<span class="token punctuation">.</span>config<span class="token punctuation">.</span>productionTip <span class="token operator">=</span> <span class="token boolean">false</span>
-
-<span class="token comment">//创建vm</span>
-<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-	<span class="token literal-property property">el</span><span class="token operator">:</span><span class="token string">'#app'</span><span class="token punctuation">,</span>
-	<span class="token function-variable function">render</span><span class="token operator">:</span> <span class="token parameter">h</span> <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">,</span>
-	store
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//子组件</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-	<span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'Count'</span><span class="token punctuation">,</span>
-	<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token keyword">return</span> <span class="token punctuation">{</span>
-			<span class="token literal-property property">n</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
-		<span class="token punctuation">}</span>
-	<span class="token punctuation">}</span><span class="token punctuation">,</span>
-	<span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-		<span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-			<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'JIA'</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>n<span class="token punctuation">)</span>
-		<span class="token punctuation">}</span><span class="token punctuation">,</span>
-		<span class="token function">decrement</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-			<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'JIAN'</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>n<span class="token punctuation">)</span>
-		<span class="token punctuation">}</span><span class="token punctuation">,</span>
-		<span class="token function">incrementOdd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-			<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'jiaOdd'</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>n<span class="token punctuation">)</span>
-		<span class="token punctuation">}</span><span class="token punctuation">,</span>
-		<span class="token function">incrementWait</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-			<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'jiaWait'</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>n<span class="token punctuation">)</span>
-		<span class="token punctuation">}</span><span class="token punctuation">,</span>
-	<span class="token punctuation">}</span><span class="token punctuation">,</span>
-	<span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Count'</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">)</span>
-	<span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="getters配置项"><a href="#getters配置项" class="headerlink" title="getters配置项"></a>getters配置项</h4><p>想要读取共享数据上的计算属性，且逻辑复杂且想要复用，可以使用getters配置项。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//该文件用于创建Vuex中最为核心的store</span>
-<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
-<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
-Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
-
-<span class="token comment">//actions 用于响应组件中的动作</span>
-<span class="token keyword">const</span> actions <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
-<span class="token comment">//mutations 用于操作数据（state）</span>
-<span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
-<span class="token comment">//state 用于存储数据</span>
-<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
-   <span class="token literal-property property">sum</span><span class="token operator">:</span><span class="token number">0</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment">//getters 类似于计算属性</span>
-<span class="token keyword">const</span> getters <span class="token operator">=</span> <span class="token punctuation">{</span>
-   <span class="token function">bigSum</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-      <span class="token keyword">return</span> state<span class="token punctuation">.</span>sum<span class="token operator">*</span><span class="token number">10</span>
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment">//创建并暴露store</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-	actions<span class="token punctuation">,</span>
-	mutations<span class="token punctuation">,</span>
-	state<span class="token punctuation">,</span>
-   getters
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="vuex优化"><a href="#vuex优化" class="headerlink" title="vuex优化"></a>vuex优化</h4><ol>
-<li>mapState 方法：用于映射<code>state</code>中的数据作为计算属性</li>
-</ol>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-   <span class="token comment">//借助mapState生成计算属性，sum, school, subject (对象写法)</span>
-   <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">sum</span><span class="token operator">:</span><span class="token string">'sum'</span><span class="token punctuation">,</span><span class="token literal-property property">school</span><span class="token operator">:</span><span class="token string">'school'</span><span class="token punctuation">,</span><span class="token literal-property property">subject</span><span class="token operator">:</span><span class="token string">'subject'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
-   <span class="token comment">//借助mapState生成计算属性，sum, school, subject (数组写法)</span>
-   <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'sum'</span><span class="token punctuation">,</span><span class="token string">'school'</span><span class="token punctuation">,</span><span class="token string">'subject'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol start="2">
-<li>mapGetters 方法：用于映射<code>getter</code>中的数据作为计算属性</li>
-</ol>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-   <span class="token comment">//借助mapGetters生成计算属性，bigSum (对象写法)</span>
-   <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">bigSum</span><span class="token operator">:</span><span class="token string">'bigSum'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
-   <span class="token comment">//借助mapGetters生成计算属性，bigSum (数组写法)</span>
-   <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'bigSum'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master|MERGING) 
+$ git add hello.txt 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ol start="3">
-<li>mapActions 方法：用于帮助生成与<code>actions</code>对话的方法，即：包含<code>$store.dispatch(xxx)</code>的函数</li>
+<li>执行提交（注意：此时使用 git commit 命令时 不能带文件名）</li>
 </ol>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">methods</span><span class="token operator">:</span><span class="token punctuation">{</span>
-   <span class="token comment">//靠mapActions生成：incrementOdd,incrementWait(对象形式)</span>
-   <span class="token operator">...</span><span class="token function">mapActions</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">incrementOdd</span><span class="token operator">:</span><span class="token string">'jiaOdd'</span><span class="token punctuation">,</span><span class="token literal-property property">incrementWait</span><span class="token operator">:</span><span class="token string">'jiaWait'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
-   <span class="token comment">//靠mapActions生成：incrementOdd,incrementWait(数组形式)</span>
-   <span class="token operator">...</span><span class="token function">mapActions</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'jiaOdd'</span><span class="token punctuation">,</span><span class="token string">'jiaWait'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol start="4">
-<li>mapMutations 方法：用于帮助生成与<code>mutations</code>对话的方法，即：包含<code>$store.commit(xxx)</code>的函数</li>
-</ol>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">methods</span><span class="token operator">:</span><span class="token punctuation">{</span>
-   <span class="token comment">//靠mapMutations生成：increment,increment(对象形式)</span>
-   <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">increment</span><span class="token operator">:</span><span class="token string">'JIA'</span><span class="token punctuation">,</span><span class="token literal-property property">increment</span><span class="token operator">:</span><span class="token string">'JIAN'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
-   <span class="token comment">//靠mapMutations生成：increment,increment(数组形式)</span>
-   <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'JIA'</span><span class="token punctuation">,</span><span class="token string">'JIAN'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master|MERGING) 
+$ git commit -m "merge hot-fix" 
+[master 69ff88d] merge hot-fix 
+--发现后面 MERGING 消失，变为正常 
+Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+$
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="vuex模块化"><a href="#vuex模块化" class="headerlink" title="vuex模块化"></a>vuex模块化</h4><ol>
-<li>目的：让代码更好维护，让多种数据分类更加明确。</li>
-<li>修改<code>store.js</code><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> countAbout <span class="token operator">=</span> <span class="token punctuation">{</span>
-   <span class="token literal-property property">namespaced</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//开启命名空间</span>
-   <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-      <span class="token literal-property property">sum</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"zf"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">20</span>
-   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-   <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-   <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-   <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-      <span class="token function">bigSum</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-         <span class="token keyword">return</span> state<span class="token punctuation">.</span>sum <span class="token operator">*</span> <span class="token number">10</span>
-      <span class="token punctuation">}</span>
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+<h3 id="八-远程仓库操作"><a href="#八-远程仓库操作" class="headerlink" title="八. 远程仓库操作"></a>八. 远程仓库操作</h3><h4 id="8-1-推送本地-分支-到远程仓库"><a href="#8-1-推送本地-分支-到远程仓库" class="headerlink" title="8.1 推送本地 分支 到远程仓库"></a>8.1 推送本地 分支 到远程仓库</h4><pre class="line-numbers language-dotnetcli" data-language="dotnetcli"><code class="language-dotnetcli">dell@DESKTOP-J704O0R MINGW64 /f/test_git/test_git-1 (master)
+$ git push https://gitee.com/fanxx123/test_git.git master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: Powered by GITEE.COM [GNK-6.4]
+To https://gitee.com/fanxx123/test_git.git
+   4950549..75adb7e  master -&gt; master 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<span class="token keyword">const</span> personAbout <span class="token operator">=</span> <span class="token punctuation">{</span>
-   <span class="token literal-property property">namespace</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//开启命名空间</span>
-   <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-      <span class="token literal-property property">list</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"张三"</span><span class="token punctuation">,</span><span class="token string">"李四"</span><span class="token punctuation">]</span>
-   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-   <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-   <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-   <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-      <span class="token function">firstPersonName</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-         <span class="token keyword">return</span> state<span class="token punctuation">.</span>list<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-      <span class="token punctuation">}</span>
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-   <span class="token literal-property property">moudles</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-      countAbout<span class="token punctuation">,</span>
-      personAbout
-   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>开启命名空间后，组件中读取<code>state</code>数据<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//方式一：自己直接读取</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>personAbout<span class="token punctuation">.</span>list
-<span class="token comment">//方式二：借助mapState读取</span>
-<span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token string">'countAbout'</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">'sum'</span><span class="token punctuation">,</span><span class="token string">'name'</span><span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>开启命名空间后，组件中读取<code>getters</code>数据<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//方式一：自己直接读取</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>getters<span class="token punctuation">[</span><span class="token string">'personAbout/firstPersonName'</span><span class="token punctuation">]</span>
-<span class="token comment">//方式二：借助mapGetters读取</span>
-<span class="token operator">...</span><span class="token function">mapGetters</span><span class="token punctuation">(</span><span class="token string">'countAbout'</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">'bigSum'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>开启命名空间后，组件中调用<code>dispatch</code><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//方式一：自己直接dispatch</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'personAbout/add'</span><span class="token punctuation">,</span>person<span class="token punctuation">)</span>
-<span class="token comment">//方式二：借助mapActions读取</span>
-<span class="token operator">...</span><span class="token function">mapActions</span><span class="token punctuation">(</span><span class="token string">'countAbout'</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token literal-property property">incrementOdd</span><span class="token operator">:</span><span class="token string">'jiaOdd'</span><span class="token punctuation">,</span><span class="token literal-property property">incrementWait</span><span class="token operator">:</span><span class="token string">'jiaWait'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>开启命名空间后，组件中调用<code>commit</code><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//方式一：自己直接commit</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'personAbout/ADD'</span><span class="token punctuation">,</span>person<span class="token punctuation">)</span>
-<span class="token comment">//方式二：借助mapMutations读取</span>
-<span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token string">'countAbout'</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token literal-property property">increment</span><span class="token operator">:</span><span class="token string">'JIA'</span><span class="token punctuation">,</span><span class="token literal-property property">increment</span><span class="token operator">:</span><span class="token string">'JIAN'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
-</ol>
-
+<h4 id="8-2-克隆远程仓库到本地"><a href="#8-2-克隆远程仓库到本地" class="headerlink" title="8.2 克隆远程仓库到本地"></a>8.2 克隆远程仓库到本地</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/pro-linghuchong 
+$ git clone https://github.com/atguiguyueyue/git-shTest.git 
+Cloning into 'git-shTest'... 
+remote: Enumerating objects: 3, done. 
+remote: Counting objects: 100% (3/3), done. 
+remote: Compressing objects: 100% (2/2), done. 
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 
+Unpacking objects: 100% (3/3), done.
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -803,7 +733,7 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://fanxx123.github.io/2022/04/14/20220414/">https://fanxx123.github.io/2022/04/14/20220414/</a>
+                    <a href="https://fanxx123.github.io/2022/10/01/20221001/">https://fanxx123.github.io/2022/10/01/20221001/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -841,8 +771,8 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/vue2/">
-                                    <span class="chip bg-color">vue2</span>
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
                                 </a>
                             
                         </div>
@@ -1149,17 +1079,18 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/04/15/20220415/">
+                <a href="/2022/10/01/20221001/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="node介绍">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="git使用教程">
                         
-                        <span class="card-title">node介绍</span>
+                        <span class="card-title">git使用教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1169,30 +1100,27 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/node-js/" class="post-category">
-                                    node.js
+                            <a href="/categories/git/" class="post-category">
+                                    git
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/node-js/">
-                        <span class="chip bg-color">node.js</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91/">
-                        <span class="chip bg-color">模块化开发</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -1206,13 +1134,13 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/02/27/20220227/">
+                <a href="/2022/08/08/20220808/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="vue2学习笔记">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="JavaScript高级 -- 难点">
                         
-                        <span class="card-title">vue2学习笔记</span>
+                        <span class="card-title">JavaScript高级 -- 难点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1223,14 +1151,14 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-08
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/vue/" class="post-category">
-                                    vue
+                            <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
                                 </a>
                             
                             
@@ -1240,8 +1168,8 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vue2/">
-                        <span class="chip bg-color">vue2</span>
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
