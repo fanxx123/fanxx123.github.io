@@ -637,12 +637,12 @@ $ git reflog
 087a1a7 HEAD@{1}: commit: my third commit 
 ca8ded6 HEAD@{2}: commit: my second commit 
 86366fa (HEAD -&gt; master) HEAD@{3}: commit (initial): my first commit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="七-分支的操作"><a href="#七-分支的操作" class="headerlink" title="七. 分支的操作"></a>七. 分支的操作</h3><h4 id="7-1-查看分支"><a href="#7-1-查看分支" class="headerlink" title="7.1 查看分支"></a>7.1 查看分支</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+<h3 id="七-分支的操作"><a href="#七-分支的操作" class="headerlink" title="七. 分支的操作"></a>七. 分支的操作</h3><h4 id="7-1-查看分支"><a href="#7-1-查看分支" class="headerlink" title="7.1 查看分支"></a>7.1 查看分支</h4><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git branch -v 
 * master 087a1a7 my third commit  （*代表当前所在的分区）
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="7-2-创建分支"><a href="#7-2-创建分支" class="headerlink" title="7.2 创建分支"></a>7.2 创建分支</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+<h4 id="7-2-创建分支"><a href="#7-2-创建分支" class="headerlink" title="7.2 创建分支"></a>7.2 创建分支</h4><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $  git branch hot-fix 
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git branch -v 
@@ -651,14 +651,14 @@ $ git branch -v
 * master  087a1a7 my third commit
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="7-3-切换分支"><a href="#7-3-切换分支" class="headerlink" title="7.3 切换分支"></a>7.3 切换分支</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+<h4 id="7-3-切换分支"><a href="#7-3-切换分支" class="headerlink" title="7.3 切换分支"></a>7.3 切换分支</h4><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git checkout hot-fix 
 Switched to branch 'hot-fix' 
 --发现当先分支已由 master 改为 hot-fix 
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (hot-fix)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="7-4-合并分支"><a href="#7-4-合并分支" class="headerlink" title="7.4 合并分支"></a>7.4 合并分支</h4><p>在 master 分支上合并 hot-fix 分支</p>
-<pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git merge hot-fix 
 Auto-merging hello.txt 
 CONFLICT (content): Merge conflict in hello.txt 
@@ -666,19 +666,19 @@ Automatic merge failed; fix conflicts and then commit the result.
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="7-5-产生冲突"><a href="#7-5-产生冲突" class="headerlink" title="7.5 产生冲突"></a>7.5 产生冲突</h4><p>产生冲突的原因：合并分支时，两个分支在 同一个文件的同一个位置有两套完全不同的修改。Git 无法替<br>我们决定使用哪一个。必须 人为决定新代码内容。<br>产生冲突的表现：后面状态为 MERGING</p>
-<pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master|MERGING) <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master|MERGING) <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h4 id="7-4-解决冲突"><a href="#7-4-解决冲突" class="headerlink" title="7.4 解决冲突"></a>7.4 解决冲突</h4><ol>
 <li>编辑有冲突的文件，删除特殊符号，决定要使用的内容<br>特殊符号：&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 当前分支的代码 ======= 合并过来的代码 &gt;&gt;&gt;&gt;&gt;&gt;&gt; hot-fix</li>
 <li>添加到暂存区</li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master|MERGING) 
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master|MERGING) 
 $ git add hello.txt 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ol start="3">
 <li>执行提交（注意：此时使用 git commit 命令时 不能带文件名）</li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master|MERGING) 
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master|MERGING) 
 $ git commit -m "merge hot-fix" 
 [master 69ff88d] merge hot-fix 
 --发现后面 MERGING 消失，变为正常 
@@ -686,7 +686,7 @@ Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master)
 $
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="八-远程仓库操作"><a href="#八-远程仓库操作" class="headerlink" title="八. 远程仓库操作"></a>八. 远程仓库操作</h3><h4 id="8-1-推送本地-分支-到远程仓库"><a href="#8-1-推送本地-分支-到远程仓库" class="headerlink" title="8.1 推送本地 分支 到远程仓库"></a>8.1 推送本地 分支 到远程仓库</h4><pre class="line-numbers language-dotnetcli" data-language="dotnetcli"><code class="language-dotnetcli">dell@DESKTOP-J704O0R MINGW64 /f/test_git/test_git-1 (master)
+<h3 id="八-远程仓库操作"><a href="#八-远程仓库操作" class="headerlink" title="八. 远程仓库操作"></a>八. 远程仓库操作</h3><h4 id="8-1-推送本地-分支-到远程仓库"><a href="#8-1-推送本地-分支-到远程仓库" class="headerlink" title="8.1 推送本地 分支 到远程仓库"></a>8.1 推送本地 分支 到远程仓库</h4><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">dell@DESKTOP-J704O0R MINGW64 /f/test_git/test_git-1 (master)
 $ git push https://gitee.com/fanxx123/test_git.git master
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
@@ -699,7 +699,7 @@ To https://gitee.com/fanxx123/test_git.git
    4950549..75adb7e  master -&gt; master 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="8-2-克隆远程仓库到本地"><a href="#8-2-克隆远程仓库到本地" class="headerlink" title="8.2 克隆远程仓库到本地"></a>8.2 克隆远程仓库到本地</h4><pre class="line-numbers language-none"><code class="language-none">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/pro-linghuchong 
+<h4 id="8-2-克隆远程仓库到本地"><a href="#8-2-克隆远程仓库到本地" class="headerlink" title="8.2 克隆远程仓库到本地"></a>8.2 克隆远程仓库到本地</h4><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">Layne@LAPTOP-Layne MINGW64 /d/Git-Space/pro-linghuchong 
 $ git clone https://github.com/atguiguyueyue/git-shTest.git 
 Cloning into 'git-shTest'... 
 remote: Enumerating objects: 3, done. 
@@ -1079,18 +1079,17 @@ Unpacking objects: 100% (3/3), done.
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/10/01/20221001/">
+                <a href="/2022/10/15/20221015/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="git使用教程">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="typescript数据类型">
                         
-                        <span class="card-title">git使用教程</span>
+                        <span class="card-title">typescript数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1100,27 +1099,26 @@ Unpacking objects: 100% (3/3), done.
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-01
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-15
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/git/" class="post-category">
-                                    git
+                            <a href="/categories/typescript/" class="post-category">
+                                    typescript
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/typescript/">
+                        <span class="chip bg-color">typescript</span>
                     </a>
                     
                 </div>
@@ -1309,7 +1307,7 @@ Unpacking objects: 100% (3/3), done.
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2020-2022</span>
+                <span id="year">2020-2023</span>
             
             <span id="year">2020</span>
             <a href="/about" target="_blank">fan</a>
@@ -1318,7 +1316,7 @@ Unpacking objects: 100% (3/3), done.
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.9k</span>&nbsp;字
+                class="white-color">81.4k</span>&nbsp;字
             
             
             
